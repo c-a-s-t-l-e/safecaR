@@ -1,0 +1,31 @@
+Package: safecaR
+Type: Package
+Title: Access NHTSA Vehicle Safety Data
+Version: 0.1.0
+Authors@R: c(
+    person(
+      "W. Abram", "Astle",
+      email = "wastle@tennessee.edu",
+      role = c("aut", "cre"),
+      comment = c(ORCID = "0009-0003-5162-4657")
+    )
+  )
+Description: Provides functions to list vehicle years, makes, models, and variants, and to retrieve crash ratings, recalls, and complaints for specific vehicles or all model variants. Returns results as tidy tibbles for easy analysis.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Imports: 
+    dplyr,
+    httr2,
+    janitor,
+    jsonlite,
+    tibble,
+    tidyr
+Suggests: 
+    knitr,
+    rmarkdown,
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3
+RoxygenNote: 7.3.3
+VignetteBuilder: knitr
+Config/Needs/website: rmarkdown

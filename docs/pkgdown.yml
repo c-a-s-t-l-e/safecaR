@@ -1,0 +1,9 @@
+pandoc: '3.4'
+pkgdown: 2.1.3
+pkgdown_sha: ~
+articles:
+  safecaR_complaints: safecaR_complaints.html
+  articles/safecaR_crash_ratings: safecaR_crash_ratings.html
+  safecaR_recalls: safecaR_recalls.html
+  articles/Safety-Ratings-Data-Dictionary: Safety-Ratings-Data-Dictionary.html
+last_built: 2025-10-07T21:50Z
