@@ -1,8 +1,9 @@
 template:
   bootstrap: 5
 
+# Paths relative to the package root
 favicon: man/figures/safecaR_hex_logo.png
-logo: man/figures/safecar_hex_logo.png
+logo: man/figures/safecaR_hex_logo.png
 
 home:
   title: "safecaR"
@@ -17,47 +18,47 @@ navbar:
       - complaints
       - reference
   components:
-    - intro:
+    intro:
       text: "Get Crash Ratings"
       href: articles/safecaR_crash_ratings.html
-    - recalls:
+    recalls:
       text: "Get Recalls"
       href: articles/safecaR_recalls.html
-    - complaints:
+    complaints:
       text: "Get Complaints"
       href: articles/safecaR_complaints.html
 
 reference:
   - title: Get Ratings
     contents:
-    - get_ratings
-    - get_ratings_by_model
+      - get_ratings
+      - get_ratings_by_model
 
   - title: Rating Catalog Functions
     contents:
-    - list_rating_years
-    - list_rating_makes
-    - list_rating_models
-    - list_rating_model_variants
+      - list_rating_years
+      - list_rating_makes
+      - list_rating_models
+      - list_rating_model_variants
 
   - title: Get Recalls
     contents:
-    - get_recalls
-    - get_recalls_by_campaign_number
+      - get_recalls
+      - get_recalls_by_campaign_number
 
   - title: Recall Catalog Functions
     contents:
-    - list_recall_years
-    - list_recall_makes
-    - list_recall_models
+      - list_recall_years
+      - list_recall_makes
+      - list_recall_models
 
   - title: Get Complaints
     contents:
-    - get_complaints
-    - get_complaints_by_odi_number
+      - get_complaints
+      - get_complaints_by_odi_number
 
   - title: Complaints Catalog Functions
     contents:
-    - list_complaint_years
-    - list_complaint_makes
-    - list_complaint_models
+      - list_complaint_years
+      - list_complaint_makes
+      - list_complaint_models
