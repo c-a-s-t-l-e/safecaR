@@ -1,0 +1,88 @@
+---
+title: "safecaR_crash_ratings"
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(safecaR)
+```
+
+### Introduction
+
+The `safecaR` package provides a tidy interface to **NHTSA APIs**, including crash ratings, recalls, and complaints.
+
+This article focuses on the **crash ratings** API, which allows you to:
+
+-   List available model years, makes, and models
+
+-   Explore vehicle variants
+
+-   Retrieve crash test ratings for individual vehicles or all variants of a model
+
+All functions return **tibbles**, making them easy to use in data analysis pipelines.
+
+### Listing Model Years
+
+```{r}
+# List available years in the NHTSA repository
+years <- list_rating_years()
+head(years)
+```
+### Listing Makes for a Year
+```{r}
+# List makes for 2022
+makes <- list_rating_makes(2022)
+head(makes)
+```
+
+### Listing Models for a Make and Year
+
+```{r}
+# List models for Acura in 2022
+models <- list_rating_models(2022, "Acura")
+head(models)
+```
+
+### Exploring Vehicle Variants
+
+```{r}
+# List all crash-tested variants for a specific model
+variants <- list_rating_model_variants(2022, "ACURA", "RDX")
+head(variants)
+```
+
+### Retrieving Safety Ratings
+```{r}
+# Fetch ratings for a specific VehicleId
+# Here we use the first variant from the list
+vehicle_id <- variants$VehicleId[1]
+
+ratings <- get_ratings(vehicle_id)
+ratings
+```
+
+## Getting Ratings for All Variants of a Model
+```{r}
+all_ratings <- get_ratings_by_model("2022", "ACURA", "RDX")
+head(all_ratings)
+```
+
+### Notes
+
+- Function inputs are case-insensitive. For example, "ACURA", "Acura", and "acura" are all valid.
+
+- VehicleId is returned for variants and is required to fetch detailed safety ratings.
+
+- All outputs are tidy tibbles for easy integration with dplyr or ggplot2.
+
+### References
+
+[NHTSA Safety Ratings API](https://www.nhtsa.gov/nhtsa-datasets-and-apis)
+
+safecaR GitHub repository: link to your repo

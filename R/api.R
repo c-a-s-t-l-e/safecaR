@@ -20,11 +20,12 @@ make_request <- function(path, query = list()) {
   status <- httr2::resp_status(resp)
   if (status >= 400) {
     warning("API request failed with status ", status)
-    return(NULL)
+    return(tibble::tibble())
   }
 
-  # Parse JSON body
-  httr2::resp_body_json(resp)
+  raw <- httr2::resp_body_string(resp)
+
+  parse_response(raw)
 }
 
 #' Parse raw JSON response from NHTSA API into a tidy list/tibble
@@ -35,10 +36,17 @@ parse_response <- function(response) {
   # Convert JSON to R object
   parsed <- jsonlite::fromJSON(response, flatten = TRUE)
 
-  # Ensure 'Results' element exists
-  if (!"Results" %in% names(parsed)) {
-    stop("Unexpected response format: 'Results' not found")
+  # Extract Results (case-insensitive) and convert to tibble
+  results_name <- names(parsed)[tolower(names(parsed)) == "results"]
+
+  if (length(results_name) == 0) {
+    stop("No 'Results' element found in API response")
   }
 
-  tibble::as_tibble(parsed$results)
+  data <- tibble::as_tibble(parsed[[results_name]])
+
+  # Clean column names using janitor
+  data <- janitor::clean_names(data, case = "lower_camel")
+
+  return(data)
 }

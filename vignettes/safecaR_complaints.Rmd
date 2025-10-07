@@ -1,0 +1,80 @@
+---
+title: "safecaR_complaints"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{safecaR_complaints}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup, include = FALSE}
+library(safecaR)
+```
+
+### Introduction
+
+The `safecaR` package provides a tidy interface to **NHTSA APIs**, including crash ratings, recalls, and complaints.
+
+This article focuses on the **complaints** API, which provides access to vehicle recall information reported to the National Highway Traffic Safety Administration (NHTSA).
+
+Using the recalls interface, you can:
+
+- List available model years, makes, and models
+
+- Retrieve detailed complaint records for individual vehicles
+
+All functions return **tibbles**, making them easy to use in data analysis pipelines.
+
+### Listing Model Years
+
+```{r}
+# List available years in the NHTSA repository
+years <- list_complaint_years()
+head(years)
+```
+
+### Listing Makes for a Year
+```{r}
+# List makes for 2022
+makes <- list_complaint_makes(2022)
+head(makes)
+```
+
+
+### Listing Models for a Make and Year
+
+```{r}
+# List models for Acura in 2022
+models <- list_complaint_models(2022, "Acura")
+head(models)
+```
+
+### Retrieving Recalls
+```{r}
+
+recalls <- get_complaints(2022, "ACURA", "RDX")
+head(recalls)
+```
+
+## Retriving Recalls by ODI Number
+```{r}
+complaints <- get_complaints_by_odi_number("11684165")
+head(complaints)
+```
+
+### Notes
+
+- Function inputs are case-insensitive. For example, "ACURA", "Acura", and "acura" are all valid.
+
+- All outputs are tidy tibbles for easy integration with dplyr or ggplot2.
+
+### References
+
+[NHTSA Safety Ratings API](https://www.nhtsa.gov/nhtsa-datasets-and-apis)

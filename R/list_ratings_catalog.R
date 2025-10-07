@@ -7,7 +7,7 @@ list_rating_years <- function() {
   data <- make_request("SafetyRatings/")
 
   #Remove VehicleId column if data is not empty
-  if (nrow(data) > 0) {
+  if (nrow(data) != 0) {
     data <- data |> dplyr::select(-vehicleId)
   }
 

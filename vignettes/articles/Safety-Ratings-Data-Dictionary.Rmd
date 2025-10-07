@@ -1,0 +1,50 @@
+---
+title: "Safety Ratings Data Dictionary"
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+This data dictionary serves as a resource to defining the columns found when calling getting the ratings for various vehicles.
+
+| Index | Column Name | Description |
+|----|----|----|
+| 1 | varient_index | Unique identifier for the vehicle variant (e.g., trim level or configuration). |
+| 2 | VehiclePicture | URL or path to the main image of the vehicle. |
+| 3 | OverallRating | Overall safety rating (1-5 stars) combining frontal, side, and rollover tests. |
+| 4 | OverallFrontCrashRating | Combined frontal crash rating (1-5 stars) for driver and passenger sides |
+| 5 | FrontCrashDriversideRating | Frontal crash rating specifically for the driver's side (1-5 stars). |
+| 6 | FrontCrashPassengersideRating | Frontal crash rating specifically for the passenger's side (1-5 stars). |
+| 7 | FrontCrashPicture | URL or path to image of frontal crash test results. |
+| 8 | FrontCrashVideo | URL or path to video of the frontal crash test. |
+| 9 | OverallSideCrashRating | Combined side crash rating (1-5 stars) for driver and passenger sides. |
+| 10 | SideCrashDriversideRating | Side crash rating specifically for the driver's side (1-5 stars). |
+| 11 | SideCrashPassengersideRating | Side crash rating specifically for the passenger's side (1-5 stars). |
+| 12 | SideCrashPicture | URL or path to image of side crash test results. |
+| 13 | SideCrashVideo | URL or path to video of the side crash test. |
+| 14 | combinedSideBarrierAndPoleRating-Front | Front-seat combined rating for side barrier and pole impact tests (1-5 stars). |
+| 15 | combinedSideBarrierAndPoleRating-Rear | Rear-seat combined rating for side barrier and pole impact tests (1-5 stars). |
+| 16 | sideBarrierRating-Overall | Overall side barrier crash rating (1-5 stars), simulating T-bone collisions. |
+| 17 | RolloverRating | Rollover resistance rating (1-5 stars) based on dynamic testing. |
+| 18 | RolloverRating2 | Secondary or alternative rollover rating (1-5 stars). |
+| 19 | RolloverPossibility | Estimated percentage chance of rollover in a single-vehicle crash. |
+| 20 | RolloverPossibility2 | Secondary estimate of rollover possibility (percentage). |
+| 21 | dynamicTipResult | Result from dynamic tip test (e.g., "Tip" or "No Tip") for rollover assessment. |
+| 22 | SidePoleCrashRating | Specific rating for side pole impact crash test (1-5 stars). |
+| 23 | SidePolePicture | URL or path to image of side pole crash test results. |
+| 24 | SidePoleVideo | URL or path to video of the side pole crash test. |
+| 25 | NHTSAElectronicStabilityControl | Indicates if the vehicle has Electronic Stability Control (ESC) standard. |
+| 26 | NHTSAForwardCollisionWarning | Indicates if Forward Collision Warning (FCW) is standard. |
+| 27 | NHTSALaneDepartureWarning | Indicates if Lane Departure Warning (LDW) is standard. |
+| 28 | ComplaintsCount | Total number of consumer complaints filed with NHTSA for this vehicle. |
+| 29 | RecallsCount | Total number of safety recalls issued for this vehicle model variant. |
+| 30 | InvestigationCount | Number of NHTSA investigations opened for this vehicle. |
+| 31 | ModelYear | The model year of the vehicle (e.g., 2023). |
+| 32 | Make | Manufacturer brand name (e.g., Toyota, Ford). |
+| 33 | Model | Specific model name (e.g., Camry, F-150). |
+| 34 | VehicleDescription | Full descriptive string (e.g., "2023 Toyota Camry LE Sedan"). |
+| 35 | VehicleId | Unique NHTSA-assigned ID for the vehicle variant. |
