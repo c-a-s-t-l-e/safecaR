@@ -10,7 +10,7 @@ Authors@R: c(
       comment = c(ORCID = "0009-0003-5162-4657")
     )
   )
-Description: Provides functions to list vehicle years, makes, models, and variants, and to retrieve crash ratings, recalls, and complaints for specific vehicles or all model variants. Returns results as tidy tibbles for easy analysis.
+Description: Provides functions for NHTSA APIs to list vehicle years, makes, models, and variants, and to retrieve crash ratings, recalls, and complaints for specific vehicles or all model variants. Returns results as tidy tibbles for easy analysis.
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
