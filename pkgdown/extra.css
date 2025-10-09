@@ -1,0 +1,21 @@
+/* Force navbar text, icons, and logo to #0a0a0a */
+.navbar, .navbar a, .navbar-nav .nav-link, .navbar-brand, .navbar-nav .nav-item, .navbar .navbar-text {
+  color: #0a0a0a !important;
+  fill: #0a0a0a !important;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link:focus {
+  color: #0a0a0a !important;
+}
+
+/* Make the version number in the navbar match your dark black color */
+.navbar .text-muted {
+  color: #0a0a0a !important;
+  opacity: 1 !important;  /* remove any lightening effect */
+}
+
+/* Optional: match hover/focus link colors too */
+.navbar a:hover, .navbar a:focus {
+  color: #0a0a0a !important;
+}

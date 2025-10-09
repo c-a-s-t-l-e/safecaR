@@ -1,22 +1,33 @@
+# ── Template & Styling ──────────────────────────────────────
 template:
   bootstrap: 5
+  bootswatch: flatly
+  bslib:
+    primary: "#ffff00"             # yellow accent
+    navbar-light-bg: "#ffff00"     # navbar background
+    navbar-light-color: "#0a0a0a"  # dark text/icons
+    nav-link-color: "#0a0a0a"
+    nav-link-hover-color: "#0a0a0a"
+    pkgdown-nav-height: 60px
+  includes:
+    in_header: pkgdown/extra.css
 
-# Paths relative to the package root
-favicon: man/figures/safecaR_hex_logo.png
+# ── Branding ────────────────────────────────────────────────
 logo: man/figures/safecaR_hex_logo.png
+favicon: man/figures/safecaR_hex_logo.png
 
+# ── Homepage ────────────────────────────────────────────────
 home:
   title: "safecaR"
   description: "Access NHTSA Vehicle Safety Data from R"
 
+# ── Navbar ─────────────────────────────────────────────────
 navbar:
-  type: inverse
+  bg: "#ffff00"      # yellow background
+  fg: "#0a0a0a"      # dark black text/icons
   structure:
-    left:
-      - intro
-      - recalls
-      - complaints
-      - reference
+    left: [intro, recalls, complaints, reference]
+    right: [github]
   components:
     intro:
       text: "Get Crash Ratings"
@@ -27,7 +38,11 @@ navbar:
     complaints:
       text: "Get Complaints"
       href: articles/safecaR_complaints.html
+    github:
+      icon: fa-github
+      href: https://github.com/c-a-s-t-l-e/safecaR
 
+# ── Reference Organization ─────────────────────────────────
 reference:
   - title: Get Ratings
     contents:
