@@ -1,7 +1,7 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# safecaR: Access NHTSA Vehicle Safety Data from R <img src="man/figures/safecaR_hex_logo.png" style="float:right; width:120px; margin-left:10px;"/>
+# safecaR: Access NHTSA Vehicle Safety Data from R <img src="man/figures/safecaR_hex_logo.png" style="float:right; width:80px; margin-left:10px;"/>
 
 ## Overview
 
