@@ -1,10 +1,7 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-<p align="center">
-  <strong style="font-size: 32px;">safecaR: Access NHTSA Vehicle Safety Data from R</strong>
-  <img src="man/figures/safecaR_hex_logo.png" alt="safecaR hex sticker" width="100" style="vertical-align: middle; margin-left: 10px;"/>
-</p>
+# safecaR: Access NHTSA Vehicle Safety Data from R <img src="man/figures/safecaR_hex_logo.png" style="float:right; width:120px; margin-left:10px;"/>
 
 ## Overview
 
