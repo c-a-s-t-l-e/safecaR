@@ -18,7 +18,7 @@
 #' \dontrun{
 #' make_request("SafetyRatings/modelyear/2013/make/Acura/model/RDX")
 #' }
-#' @export
+#' @keywords internal
 make_request <- function(path, query = list()) {
   base_url <- "https://api.nhtsa.gov/"
 
