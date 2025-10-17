@@ -76,7 +76,6 @@
 <h2 id="overview">Overview<a class="anchor" aria-label="anchor" href="#overview"></a>
 </h2>
 <p>The <code>safecaR</code> R package provides a tidy interface to <strong>NHTSA APIs</strong>, including crash ratings, recalls, and complaints.</p>
-<p>⚠️ <strong>Note:</strong> This package requires an internet connection to fetch data from public NHTSA APIs. If you’re offline, functions will not return results.</p>
 </div>
 <div class="section level2">
 <h2 id="installation">Installation<a class="anchor" aria-label="anchor" href="#installation"></a>
@@ -89,31 +88,25 @@
 <div class="section level2">
 <h2 id="basic-use">Basic Use<a class="anchor" aria-label="anchor" href="#basic-use"></a>
 </h2>
-<ol style="list-style-type: decimal">
-<li>Access vehicle crash ratings for a single vehicle</li>
-</ol>
+<p><strong>Option #1:</strong> Access vehicle crash ratings for a single vehicle</p>
 <div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="co"># uses the NHTSA vehicle ID for 2022 Acura RDX</span></span>
 <span><span class="va">ratings</span> <span class="op">&lt;-</span> <span class="fu"><a href="reference/get_ratings.html">get_ratings</a></span><span class="op">(</span><span class="fl">7520</span><span class="op">)</span></span>
 <span><span class="fu"><a href="https://rdrr.io/r/utils/head.html" class="external-link">head</a></span><span class="op">(</span><span class="va">ratings</span><span class="op">)</span></span></code></pre></div>
-<ol start="2" style="list-style-type: decimal">
-<li>Access vehicle crash ratings for all model variants</li>
-</ol>
+<p><strong>Option #2:</strong> Access vehicle crash ratings for all model variants</p>
 <div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="va">ratings_all</span> <span class="op">&lt;-</span> <span class="fu"><a href="reference/get_ratings_by_model.html">get_ratings_by_model</a></span><span class="op">(</span><span class="fl">2022</span>, <span class="st">"ACURA"</span>, <span class="st">"RDX"</span><span class="op">)</span></span>
 <span><span class="fu"><a href="https://rdrr.io/r/utils/head.html" class="external-link">head</a></span><span class="op">(</span><span class="va">ratings_all</span><span class="op">)</span></span></code></pre></div>
-<ol start="3" style="list-style-type: decimal">
-<li>Access vehicle recalls</li>
-</ol>
+<p><strong>Option #3:</strong> Access vehicle recalls</p>
 <div class="sourceCode" id="cb4"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="va">recalls</span> <span class="op">&lt;-</span> <span class="fu"><a href="reference/get_recalls.html">get_recalls</a></span><span class="op">(</span><span class="fl">2022</span>, <span class="st">"ACURA"</span>, <span class="st">"RDX"</span><span class="op">)</span></span>
 <span><span class="fu"><a href="https://rdrr.io/r/utils/head.html" class="external-link">head</a></span><span class="op">(</span><span class="va">recalls</span><span class="op">)</span></span></code></pre></div>
-<ol start="4" style="list-style-type: decimal">
-<li>Access vehicle complaints</li>
-</ol>
+<p><strong>Option #4:</strong> Access vehicle complaints</p>
 <div class="sourceCode" id="cb5"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="va">complaints</span> <span class="op">&lt;-</span> <span class="fu"><a href="reference/get_complaints.html">get_complaints</a></span><span class="op">(</span><span class="fl">2022</span>, <span class="st">"ACURA"</span>, <span class="st">"RDX"</span><span class="op">)</span></span>
 <span><span class="fu"><a href="https://rdrr.io/r/utils/head.html" class="external-link">head</a></span><span class="op">(</span><span class="va">complaints</span><span class="op">)</span></span></code></pre></div>
+<p>Besides this file, more information like listing all available years, makes, models, and model variants can be found at <a href="https://c-a-s-t-l-e.github.io/safecaR/">safecaR’s website</a>.</p>
+<p>⚠️ <strong>Note:</strong> This package requires an internet connection to fetch data from public NHTSA APIs. If you’re offline, functions will not return results.</p>
 </div>
 </div>
   </main><aside class="col-md-3"><div class="license">
