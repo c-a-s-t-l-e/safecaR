@@ -8,9 +8,8 @@
 The `safecaR` R package provides a tidy interface to **NHTSA APIs**,
 including crash ratings, recalls, and complaints.
 
-⚠️ **Note:** This package requires an internet connection to fetch data
-from public NHTSA APIs. If you’re offline, functions will not return
-results.
+Besides this file, more information can be found at [safecaR’s
+website](https://c-a-s-t-l-e.github.io/safecaR/).
 
 ## Installation
 
@@ -53,5 +52,6 @@ complaints <- get_complaints(2022, "ACURA", "RDX")
 head(complaints)
 ```
 
-More information can be found at [safecaR’s
-website](https://c-a-s-t-l-e.github.io/safecaR/).
+⚠️ **Note:** This package requires an internet connection to fetch data
+from public NHTSA APIs. If you’re offline, functions will not return
+results.
