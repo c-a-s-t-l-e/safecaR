@@ -2,16 +2,18 @@
 % Please edit documentation in R/api.R
 \name{parse_response}
 \alias{parse_response}
-\title{Parse raw JSON response from NHTSA API into a tidy list/tibble}
+\title{Parse raw JSON response from the NHTSA API}
 \usage{
 parse_response(response)
 }
 \arguments{
-\item{response}{Raw JSON string}
+\item{response}{Raw JSON string from the API}
 }
 \value{
-Parsed response as a list or tibble
+A tibble with parsed and cleaned data
 }
 \description{
-Parse raw JSON response from NHTSA API into a tidy list/tibble
+Parses a raw JSON string returned from the NHTSA API. Extracts the 'Results'
+element (case-insensitive) and returns it as a cleaned tibble.
 }
+\keyword{internal}

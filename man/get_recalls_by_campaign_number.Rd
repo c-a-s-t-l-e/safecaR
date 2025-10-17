@@ -8,8 +8,6 @@ get_recalls_by_campaign_number(campaign_number)
 }
 \arguments{
 \item{campaign_number}{Campaign number}
-
-\item{year}{Numeric model year}
 }
 \value{
 A tibble of recalls

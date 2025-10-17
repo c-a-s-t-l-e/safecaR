@@ -7,11 +7,26 @@
 make_request(path, query = list())
 }
 \arguments{
-\item{endpoint}{API endpoint path (string), e.g., "modelyear/2013/make/Acura/model/RDX"}
+\item{path}{A character string specifying the endpoint path (e.g.,
+"modelyear/2013/make/Acura/model/RDX")}
+
+\item{query}{Optional list of query parameters to include in the request}
 }
 \value{
-Parsed JSON response as a list
+A tibble with the API response data, or an empty tibble on error
 }
 \description{
-Perform an HTTP GET request to the NHTSA Safety Ratings API
+This function sends a GET request to the NHTSA public API and returns
+the parsed response as a tibble. If the request fails (e.g., due to
+no internet connection or an invalid path), it returns an empty tibble
+and issues a warning.
+}
+\note{
+This function requires an internet connection and may return
+  an empty result if the API is unavailable.
+}
+\examples{
+\dontrun{
+make_request("SafetyRatings/modelyear/2013/make/Acura/model/RDX")
+}
 }
