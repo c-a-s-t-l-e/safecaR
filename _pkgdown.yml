@@ -1,5 +1,7 @@
 # ── Template & Styling ──────────────────────────────────────
 template:
+  logo: "man/figures/logo.png"
+  favicon: "man/figures/logo.png"
   bootstrap: 5
   bootswatch: flatly
   bslib:
@@ -12,13 +14,9 @@ template:
   includes:
     in_header: pkgdown/extra.css
 
-# ── Branding ────────────────────────────────────────────────
-logo: man/figures/safecaR_hex_logo.png
-favicon: man/figures/safecaR_hex_logo.png
-
 # ── Homepage ────────────────────────────────────────────────
 home:
-  title: "safecaR"
+  title: "The safecaR Package"
   description: "Access NHTSA Vehicle Safety Data from R"
 
 # ── Navbar ─────────────────────────────────────────────────
@@ -26,10 +24,10 @@ navbar:
   bg: "#ffff00"      # yellow background
   fg: "#0a0a0a"      # dark black text/icons
   structure:
-    left: [intro, recalls, complaints, reference]
+    left: [ratings, recalls, complaints, reference]
     right: [github]
   components:
-    intro:
+    ratings:
       text: "Get Crash Ratings"
       href: articles/safecaR_crash_ratings.html
     recalls:

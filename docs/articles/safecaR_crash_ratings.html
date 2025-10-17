@@ -5,13 +5,18 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<title>safecaR_crash_ratings • safecaR</title>
+<title>Get Crash Ratings • safecaR</title>
+<!-- favicons --><link rel="icon" type="image/png" sizes="96x96" href="../favicon-96x96.png">
+<link rel="icon" type="”image/svg+xml”" href="../favicon.svg">
+<link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
+<link rel="icon" sizes="any" href="../favicon.ico">
+<link rel="manifest" href="../site.webmanifest">
 <script src="../deps/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link href="../deps/bootstrap-5.3.1/bootstrap.min.css" rel="stylesheet">
 <script src="../deps/bootstrap-5.3.1/bootstrap.bundle.min.js"></script><link href="../deps/font-awesome-6.5.2/css/all.min.css" rel="stylesheet">
 <link href="../deps/font-awesome-6.5.2/css/v4-shims.min.css" rel="stylesheet">
 <script src="../deps/headroom-0.11.0/headroom.min.js"></script><script src="../deps/headroom-0.11.0/jQuery.headroom.min.js"></script><script src="../deps/bootstrap-toc-1.0.1/bootstrap-toc.min.js"></script><script src="../deps/clipboard.js-2.0.11/clipboard.min.js"></script><script src="../deps/search-1.0.0/autocomplete.jquery.min.js"></script><script src="../deps/search-1.0.0/fuse.min.js"></script><script src="../deps/search-1.0.0/mark.min.js"></script><!-- pkgdown --><script src="../pkgdown.js"></script><link href="../extra.css" rel="stylesheet">
-<meta property="og:title" content="safecaR_crash_ratings">
+<meta property="og:title" content="Get Crash Ratings">
 </head>
 <body>
 <p>
@@ -63,8 +68,7 @@
 
 <div class="row">
   <main id="main" class="col-md-9"><div class="page-header">
-
-      <h1>safecaR_crash_ratings</h1>
+      <img src="../logo.png" class="logo" alt=""><h1>Get Crash Ratings</h1>
             
       
 
@@ -73,8 +77,6 @@
 
     
     
-<div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va">safecaR</span><span class="op">)</span></span></code></pre></div>
 <div class="section level3">
 <h3 id="introduction">Introduction<a class="anchor" aria-label="anchor" href="#introduction"></a>
 </h3>
@@ -95,7 +97,7 @@ use in data analysis pipelines.</p>
 <div class="section level3">
 <h3 id="listing-model-years">Listing Model Years<a class="anchor" aria-label="anchor" href="#listing-model-years"></a>
 </h3>
-<div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="co"># List available years in the NHTSA repository</span></span>
 <span><span class="va">years</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/list_rating_years.html">list_rating_years</a></span><span class="op">(</span><span class="op">)</span></span>
 <span><span class="fu"><a href="https://rdrr.io/r/utils/head.html" class="external-link">head</a></span><span class="op">(</span><span class="va">years</span><span class="op">)</span></span>
@@ -112,7 +114,7 @@ use in data analysis pipelines.</p>
 <div class="section level3">
 <h3 id="listing-makes-for-a-year">Listing Makes for a Year<a class="anchor" aria-label="anchor" href="#listing-makes-for-a-year"></a>
 </h3>
-<div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="co"># List makes for 2022</span></span>
 <span><span class="va">makes</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/list_rating_makes.html">list_rating_makes</a></span><span class="op">(</span><span class="fl">2022</span><span class="op">)</span></span>
 <span><span class="fu"><a href="https://rdrr.io/r/utils/head.html" class="external-link">head</a></span><span class="op">(</span><span class="va">makes</span><span class="op">)</span></span>
@@ -129,7 +131,7 @@ use in data analysis pipelines.</p>
 <div class="section level3">
 <h3 id="listing-models-for-a-make-and-year">Listing Models for a Make and Year<a class="anchor" aria-label="anchor" href="#listing-models-for-a-make-and-year"></a>
 </h3>
-<div class="sourceCode" id="cb4"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="co"># List models for Acura in 2022</span></span>
 <span><span class="va">models</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/list_rating_models.html">list_rating_models</a></span><span class="op">(</span><span class="fl">2022</span>, <span class="st">"Acura"</span><span class="op">)</span></span>
 <span><span class="fu"><a href="https://rdrr.io/r/utils/head.html" class="external-link">head</a></span><span class="op">(</span><span class="va">models</span><span class="op">)</span></span>
@@ -145,7 +147,7 @@ use in data analysis pipelines.</p>
 <div class="section level3">
 <h3 id="exploring-vehicle-variants">Exploring Vehicle Variants<a class="anchor" aria-label="anchor" href="#exploring-vehicle-variants"></a>
 </h3>
-<div class="sourceCode" id="cb5"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb4"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="co"># List all crash-tested variants for a specific model</span></span>
 <span><span class="va">variants</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/list_rating_model_variants.html">list_rating_model_variants</a></span><span class="op">(</span><span class="fl">2022</span>, <span class="st">"ACURA"</span>, <span class="st">"RDX"</span><span class="op">)</span></span>
 <span><span class="fu"><a href="https://rdrr.io/r/utils/head.html" class="external-link">head</a></span><span class="op">(</span><span class="va">variants</span><span class="op">)</span></span>
@@ -158,7 +160,7 @@ use in data analysis pipelines.</p>
 <div class="section level3">
 <h3 id="retrieving-safety-ratings">Retrieving Safety Ratings<a class="anchor" aria-label="anchor" href="#retrieving-safety-ratings"></a>
 </h3>
-<div class="sourceCode" id="cb6"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb5"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="co"># Fetch ratings for a specific VehicleId</span></span>
 <span><span class="co"># Here we use the first variant from the list</span></span>
 <span><span class="va">vehicle_id</span> <span class="op">&lt;-</span> <span class="va">variants</span><span class="op">$</span><span class="va">VehicleId</span><span class="op">[</span><span class="fl">1</span><span class="op">]</span></span>
@@ -171,7 +173,7 @@ use in data analysis pipelines.</p>
 <div class="section level2">
 <h2 id="getting-ratings-for-all-variants-of-a-model">Getting Ratings for All Variants of a Model<a class="anchor" aria-label="anchor" href="#getting-ratings-for-all-variants-of-a-model"></a>
 </h2>
-<div class="sourceCode" id="cb7"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb6"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="va">all_ratings</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/get_ratings_by_model.html">get_ratings_by_model</a></span><span class="op">(</span><span class="st">"2022"</span>, <span class="st">"ACURA"</span>, <span class="st">"RDX"</span><span class="op">)</span></span>
 <span><span class="fu"><a href="https://rdrr.io/r/utils/head.html" class="external-link">head</a></span><span class="op">(</span><span class="va">all_ratings</span><span class="op">)</span></span>
 <span><span class="co">#&gt; <span style="color: #949494;"># A tibble: 2 × 34</span></span></span>
@@ -203,7 +205,6 @@ ggplot2.</p></li>
 </h3>
 <p><a href="https://www.nhtsa.gov/nhtsa-datasets-and-apis" class="external-link">NHTSA Safety
 Ratings API</a></p>
-<p>safecaR GitHub repository: link to your repo</p>
 </div>
 </div>
   </main><aside class="col-md-3"><nav id="toc" aria-label="Table of contents"><h2>On this page</h2>

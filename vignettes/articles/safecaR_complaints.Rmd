@@ -1,8 +1,8 @@
 ---
-title: "safecaR_recalls"
+title: "Get Complaints"
 output: rmarkdown::html_vignette
 vignette: >
-  %\VignetteIndexEntry{safecaR_recalls}
+  %\VignetteIndexEntry{safecaR_complaints}
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
 ---
@@ -22,13 +22,13 @@ library(safecaR)
 
 The `safecaR` package provides a tidy interface to **NHTSA APIs**, including crash ratings, recalls, and complaints.
 
-This article focuses on the **recalls** API, which provides access to vehicle recall information reported to the National Highway Traffic Safety Administration (NHTSA).
+This article focuses on the **complaints** API, which provides access to vehicle recall information reported to the National Highway Traffic Safety Administration (NHTSA).
 
 Using the recalls interface, you can:
 
 - List available model years, makes, and models
 
-- Retrieve detailed recall records for individual vehicles
+- Retrieve detailed complaint records for individual vehicles
 
 All functions return **tibbles**, making them easy to use in data analysis pipelines.
 
@@ -36,13 +36,14 @@ All functions return **tibbles**, making them easy to use in data analysis pipel
 
 ```{r}
 # List available years in the NHTSA repository
-years <- list_recall_years()
+years <- list_complaint_years()
 head(years)
 ```
+
 ### Listing Makes for a Year
 ```{r}
 # List makes for 2022
-makes <- list_recall_makes(2022)
+makes <- list_complaint_makes(2022)
 head(makes)
 ```
 
@@ -51,21 +52,21 @@ head(makes)
 
 ```{r}
 # List models for Acura in 2022
-models <- list_recall_models(2022, "Acura")
+models <- list_complaint_models(2022, "Acura")
 head(models)
 ```
 
-### Retrieving Recalls
+### Retrieving Complaints
 ```{r}
 
-recalls <- get_recalls(2022, "ACURA", "RDX")
-head(recalls)
+complaints <- get_complaints(2022, "ACURA", "RDX")
+head(complaints)
 ```
 
-## Retriving Recalls by Campaign Number
+### Retrieving Complaints by ODI Number
 ```{r}
-recalls <- get_recalls_by_campaign_number("24V064000")
-head(recalls)
+complaints <- get_complaints_by_odi_number("11684165")
+head(complaints)
 ```
 
 ### Notes

@@ -30,3 +30,4 @@ This function requires an internet connection and may return
 make_request("SafetyRatings/modelyear/2013/make/Acura/model/RDX")
 }
 }
+\keyword{internal}

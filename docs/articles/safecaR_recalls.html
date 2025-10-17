@@ -5,13 +5,18 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<title>safecaR_recalls • safecaR</title>
+<title>Get Recalls • safecaR</title>
+<!-- favicons --><link rel="icon" type="image/png" sizes="96x96" href="../favicon-96x96.png">
+<link rel="icon" type="”image/svg+xml”" href="../favicon.svg">
+<link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
+<link rel="icon" sizes="any" href="../favicon.ico">
+<link rel="manifest" href="../site.webmanifest">
 <script src="../deps/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link href="../deps/bootstrap-5.3.1/bootstrap.min.css" rel="stylesheet">
 <script src="../deps/bootstrap-5.3.1/bootstrap.bundle.min.js"></script><link href="../deps/font-awesome-6.5.2/css/all.min.css" rel="stylesheet">
 <link href="../deps/font-awesome-6.5.2/css/v4-shims.min.css" rel="stylesheet">
 <script src="../deps/headroom-0.11.0/headroom.min.js"></script><script src="../deps/headroom-0.11.0/jQuery.headroom.min.js"></script><script src="../deps/bootstrap-toc-1.0.1/bootstrap-toc.min.js"></script><script src="../deps/clipboard.js-2.0.11/clipboard.min.js"></script><script src="../deps/search-1.0.0/autocomplete.jquery.min.js"></script><script src="../deps/search-1.0.0/fuse.min.js"></script><script src="../deps/search-1.0.0/mark.min.js"></script><!-- pkgdown --><script src="../pkgdown.js"></script><link href="../extra.css" rel="stylesheet">
-<meta property="og:title" content="safecaR_recalls">
+<meta property="og:title" content="Get Recalls">
 </head>
 <body>
 <p>
@@ -63,8 +68,7 @@
 
 <div class="row">
   <main id="main" class="col-md-9"><div class="page-header">
-
-      <h1>safecaR_recalls</h1>
+      <img src="../logo.png" class="logo" alt=""><h1>Get Recalls</h1>
             
       
 
@@ -156,9 +160,9 @@ use in data analysis pipelines.</p>
 <span><span class="co">#&gt; <span style="color: #949494;">#   consequence &lt;chr&gt;, remedy &lt;chr&gt;, notes &lt;chr&gt;, modelYear &lt;chr&gt;, make &lt;chr&gt;,</span></span></span>
 <span><span class="co">#&gt; <span style="color: #949494;">#   model &lt;chr&gt;</span></span></span></code></pre></div>
 </div>
-<div class="section level2">
-<h2 id="retriving-recalls-by-campaign-number">Retriving Recalls by Campaign Number<a class="anchor" aria-label="anchor" href="#retriving-recalls-by-campaign-number"></a>
-</h2>
+<div class="section level3">
+<h3 id="retrieving-recalls-by-campaign-number">Retrieving Recalls by Campaign Number<a class="anchor" aria-label="anchor" href="#retrieving-recalls-by-campaign-number"></a>
+</h3>
 <div class="sourceCode" id="cb5"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="va">recalls</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/get_recalls_by_campaign_number.html">get_recalls_by_campaign_number</a></span><span class="op">(</span><span class="st">"24V064000"</span><span class="op">)</span></span>
 <span><span class="fu"><a href="https://rdrr.io/r/utils/head.html" class="external-link">head</a></span><span class="op">(</span><span class="va">recalls</span><span class="op">)</span></span>
@@ -174,6 +178,7 @@ use in data analysis pipelines.</p>
 <span><span class="co">#&gt; <span style="color: #949494;"># ℹ 10 more variables: reportReceivedDate &lt;chr&gt;, component &lt;chr&gt;,</span></span></span>
 <span><span class="co">#&gt; <span style="color: #949494;">#   potentialNumberofUnitsAffected &lt;int&gt;, summary &lt;chr&gt;, consequence &lt;chr&gt;,</span></span></span>
 <span><span class="co">#&gt; <span style="color: #949494;">#   remedy &lt;chr&gt;, notes &lt;chr&gt;, modelYear &lt;chr&gt;, make &lt;chr&gt;, model &lt;chr&gt;</span></span></span></code></pre></div>
+</div>
 <div class="section level3">
 <h3 id="notes">Notes<a class="anchor" aria-label="anchor" href="#notes"></a>
 </h3>
@@ -189,7 +194,6 @@ ggplot2.</p></li>
 </h3>
 <p><a href="https://www.nhtsa.gov/nhtsa-datasets-and-apis" class="external-link">NHTSA Safety
 Ratings API</a></p>
-</div>
 </div>
   </main><aside class="col-md-3"><nav id="toc" aria-label="Table of contents"><h2>On this page</h2>
     </nav></aside>
