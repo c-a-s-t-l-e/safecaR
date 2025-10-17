@@ -14,7 +14,7 @@ knitr::opts_chunk$set(
 )
 ```
 
-# safecaR: Access NHTSA Vehicle Safety Data from R <img src="man/figures/safecaR_hex_logo.png" style="float:right; width:120px; margin-left:10px;"/>
+# safecaR: Access NHTSA Vehicle Safety Data from R
 
 ## Overview
 
@@ -29,9 +29,33 @@ You can install the latest release of `safecaR` on Github with the following:
 ```{r}
 # install.packages("remotes") if you don't have it
 remotes::install_github("c-a-s-t-l-e/safecaR")
-
-# or via CRAN
-install.packages("safecaR")
 ```
 
-## Getting started
+## Basic Use
+
+**Option #1:** Access vehicle crash ratings for a single vehicle
+```{r}
+# uses the NHTSA vehicle ID for 2022 Acura RDX
+ratings <- get_ratings(7520)
+head(ratings)
+```
+
+**Option #2:** Access vehicle crash ratings for all model variants
+```{r}
+ratings_all <- get_ratings_by_model(2022, "ACURA", "RDX")
+head(ratings_all)
+```
+
+
+**Option #3:** Access vehicle recalls
+```{r}
+recalls <- get_recalls(2022, "ACURA", "RDX")
+head(recalls)
+```
+
+**Option #4:** Access vehicle complaints
+```{r}
+complaints <- get_complaints(2022, "ACURA", "RDX")
+head(complaints)
+```
+
