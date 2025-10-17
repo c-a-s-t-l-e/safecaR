@@ -59,3 +59,4 @@ complaints <- get_complaints(2022, "ACURA", "RDX")
 head(complaints)
 ```
 
+More information can be found at [safecaR's website](https://c-a-s-t-l-e.github.io/safecaR/).

@@ -24,7 +24,7 @@ remotes::install_github("c-a-s-t-l-e/safecaR")
 
 ## Basic Use
 
-1.  Access vehicle crash ratings for a single vehicle
+**Option \#1:** Access vehicle crash ratings for a single vehicle
 
 ``` r
 # uses the NHTSA vehicle ID for 2022 Acura RDX
@@ -32,23 +32,26 @@ ratings <- get_ratings(7520)
 head(ratings)
 ```
 
-2.  Access vehicle crash ratings for all model variants
+**Option \#2:** Access vehicle crash ratings for all model variants
 
 ``` r
 ratings_all <- get_ratings_by_model(2022, "ACURA", "RDX")
 head(ratings_all)
 ```
 
-3.  Access vehicle recalls
+**Option \#3:** Access vehicle recalls
 
 ``` r
 recalls <- get_recalls(2022, "ACURA", "RDX")
 head(recalls)
 ```
 
-4.  Access vehicle complaints
+**Option \#4:** Access vehicle complaints
 
 ``` r
 complaints <- get_complaints(2022, "ACURA", "RDX")
 head(complaints)
 ```
+
+More information can be found at [safecaR’s
+website](https://c-a-s-t-l-e.github.io/safecaR/).
