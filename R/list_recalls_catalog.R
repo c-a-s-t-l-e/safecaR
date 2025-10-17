@@ -6,7 +6,7 @@
 list_recall_years <- function() {
   path <- "products/vehicle/modelYears"
   query <- list(
-    issueType = URLencode("r", reserved = TRUE)
+    issueType = utils::URLencode("r", reserved = TRUE)
   )
 
   data <- make_request(path, query)
@@ -25,7 +25,7 @@ list_recall_makes <- function(year) {
   path <- "products/vehicle/makes"
   query <- list(
     modelYear = year,
-    issueType = URLencode("r", reserved = TRUE)
+    issueType = utils::URLencode("r", reserved = TRUE)
   )
 
   data <- make_request(path, query)
@@ -40,7 +40,7 @@ list_recall_makes <- function(year) {
 #' @export
 list_recall_models <- function(year, make) {
 
-  make_encoded <- URLencode(make, reserved = TRUE)
+  make_encoded <- utils::URLencode(make, reserved = TRUE)
   year_as_character <- as.character(year)
 
   path <- "products/vehicle/models"

@@ -12,8 +12,8 @@ get_recalls <- function(year, make, model) {
     stop("Arguments 'year', 'make', and 'model' must not be NULL")
   }
 
-  make_encoded <- URLencode(make, reserved = TRUE)
-  model_encoded <- URLencode(model, reserved = TRUE)
+  make_encoded <- utils::URLencode(make, reserved = TRUE)
+  model_encoded <- utils::URLencode(model, reserved = TRUE)
   year_as_character <- as.character(year)
 
   path <- "recalls/recallsByVehicle"
@@ -28,12 +28,11 @@ get_recalls <- function(year, make, model) {
 }
 
 #' Get recalls by campaign number
-#' @param year Numeric model year
 #' @param campaign_number Campaign number
 #' @return A tibble of recalls
 #' @export
 get_recalls_by_campaign_number <- function(campaign_number) {
-  campaign_number_encoded <- URLencode(campaign_number, reserved = TRUE)
+  campaign_number_encoded <- utils::URLencode(campaign_number, reserved = TRUE)
 
   path <- "recalls/campaignNumber"
   query <- list(
