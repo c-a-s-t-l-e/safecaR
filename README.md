@@ -8,7 +8,8 @@
 The `safecaR` R package provides a tidy interface to **NHTSA APIs**,
 including crash ratings, recalls, and complaints.
 
-Besides this file, more information can be found at [safecaR’s
+Besides this file, more information like listing all available years,
+makes, models, and model variants can be found at [safecaR’s
 website](https://c-a-s-t-l-e.github.io/safecaR/).
 
 ## Installation
