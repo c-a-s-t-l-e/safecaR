@@ -1,7 +1,7 @@
 # R/get_ratings.R
 
 #' Get crash test ratings for a specific vehicle
-#' @param vehicle_id VehicleId from list_variants()
+#' @param vehicle_id NHTSA Vehicle ID
 #' @return A tibble of ratings
 #' @export
 get_ratings <- function(vehicle_id) {
