@@ -32,7 +32,7 @@ make_request <- function(path, query = list()) {
 
     status <- httr2::resp_status(resp)
     if (status >= 400) {
-      warning("API request failed with status ", status)
+      stop("API request failed with status ", status)
       return(tibble::tibble())
     }
 
