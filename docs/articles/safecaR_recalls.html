@@ -100,6 +100,14 @@ use in data analysis pipelines.</p>
 <div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="co"># List available years in the NHTSA repository</span></span>
 <span><span class="va">years</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/list_recall_years.html">list_recall_years</a></span><span class="op">(</span><span class="op">)</span></span>
+<span><span class="co">#&gt; [1] "https://api.nhtsa.gov/products/vehicle/modelYears?issueType=r"</span></span>
+<span><span class="co">#&gt; [2] "NULL"                                                         </span></span>
+<span><span class="co">#&gt; [3] "list()"                                                       </span></span>
+<span><span class="co">#&gt; [4] "NULL"                                                         </span></span>
+<span><span class="co">#&gt; [5] "list()"                                                       </span></span>
+<span><span class="co">#&gt; [6] "list()"                                                       </span></span>
+<span><span class="co">#&gt; [7] "list(error_is_error = function (resp) \nFALSE)"               </span></span>
+<span><span class="co">#&gt; [8] "&lt;environment&gt;"</span></span>
 <span><span class="fu"><a href="https://rdrr.io/r/utils/head.html" class="external-link">head</a></span><span class="op">(</span><span class="va">years</span><span class="op">)</span></span>
 <span><span class="co">#&gt; <span style="color: #949494;"># A tibble: 6 × 1</span></span></span>
 <span><span class="co">#&gt;   modelYear</span></span>
@@ -117,6 +125,14 @@ use in data analysis pipelines.</p>
 <div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="co"># List makes for 2022</span></span>
 <span><span class="va">makes</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/list_recall_makes.html">list_recall_makes</a></span><span class="op">(</span><span class="fl">2022</span><span class="op">)</span></span>
+<span><span class="co">#&gt; [1] "https://api.nhtsa.gov/products/vehicle/makes?modelYear=2022&amp;issueType=r"</span></span>
+<span><span class="co">#&gt; [2] "NULL"                                                                   </span></span>
+<span><span class="co">#&gt; [3] "list()"                                                                 </span></span>
+<span><span class="co">#&gt; [4] "NULL"                                                                   </span></span>
+<span><span class="co">#&gt; [5] "list()"                                                                 </span></span>
+<span><span class="co">#&gt; [6] "list()"                                                                 </span></span>
+<span><span class="co">#&gt; [7] "list(error_is_error = function (resp) \nFALSE)"                         </span></span>
+<span><span class="co">#&gt; [8] "&lt;environment&gt;"</span></span>
 <span><span class="fu"><a href="https://rdrr.io/r/utils/head.html" class="external-link">head</a></span><span class="op">(</span><span class="va">makes</span><span class="op">)</span></span>
 <span><span class="co">#&gt; <span style="color: #949494;"># A tibble: 6 × 2</span></span></span>
 <span><span class="co">#&gt;   modelYear make         </span></span>
@@ -134,6 +150,14 @@ use in data analysis pipelines.</p>
 <div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="co"># List models for Acura in 2022</span></span>
 <span><span class="va">models</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/list_recall_models.html">list_recall_models</a></span><span class="op">(</span><span class="fl">2022</span>, <span class="st">"Acura"</span><span class="op">)</span></span>
+<span><span class="co">#&gt; [1] "https://api.nhtsa.gov/products/vehicle/models?modelYear=2022&amp;make=Acura&amp;issueType=r"</span></span>
+<span><span class="co">#&gt; [2] "NULL"                                                                               </span></span>
+<span><span class="co">#&gt; [3] "list()"                                                                             </span></span>
+<span><span class="co">#&gt; [4] "NULL"                                                                               </span></span>
+<span><span class="co">#&gt; [5] "list()"                                                                             </span></span>
+<span><span class="co">#&gt; [6] "list()"                                                                             </span></span>
+<span><span class="co">#&gt; [7] "list(error_is_error = function (resp) \nFALSE)"                                     </span></span>
+<span><span class="co">#&gt; [8] "&lt;environment&gt;"</span></span>
 <span><span class="fu"><a href="https://rdrr.io/r/utils/head.html" class="external-link">head</a></span><span class="op">(</span><span class="va">models</span><span class="op">)</span></span>
 <span><span class="co">#&gt; <span style="color: #949494;"># A tibble: 6 × 3</span></span></span>
 <span><span class="co">#&gt;   modelYear make  model</span></span>
@@ -151,6 +175,14 @@ use in data analysis pipelines.</p>
 <div class="sourceCode" id="cb4"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span></span>
 <span><span class="va">recalls</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/get_recalls.html">get_recalls</a></span><span class="op">(</span><span class="fl">2022</span>, <span class="st">"ACURA"</span>, <span class="st">"RDX"</span><span class="op">)</span></span>
+<span><span class="co">#&gt; [1] "https://api.nhtsa.gov/recalls/recallsByVehicle?make=ACURA&amp;model=RDX&amp;modelYear=2022"</span></span>
+<span><span class="co">#&gt; [2] "NULL"                                                                              </span></span>
+<span><span class="co">#&gt; [3] "list()"                                                                            </span></span>
+<span><span class="co">#&gt; [4] "NULL"                                                                              </span></span>
+<span><span class="co">#&gt; [5] "list()"                                                                            </span></span>
+<span><span class="co">#&gt; [6] "list()"                                                                            </span></span>
+<span><span class="co">#&gt; [7] "list(error_is_error = function (resp) \nFALSE)"                                    </span></span>
+<span><span class="co">#&gt; [8] "&lt;environment&gt;"</span></span>
 <span><span class="fu"><a href="https://rdrr.io/r/utils/head.html" class="external-link">head</a></span><span class="op">(</span><span class="va">recalls</span><span class="op">)</span></span>
 <span><span class="co">#&gt; <span style="color: #949494;"># A tibble: 1 × 14</span></span></span>
 <span><span class="co">#&gt;   manufacturer           nhtsaCampaignNumber parkIt parkOutSide overTheAirUpdate</span></span>
@@ -165,6 +197,14 @@ use in data analysis pipelines.</p>
 </h3>
 <div class="sourceCode" id="cb5"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="va">recalls</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/get_recalls_by_campaign_number.html">get_recalls_by_campaign_number</a></span><span class="op">(</span><span class="st">"24V064000"</span><span class="op">)</span></span>
+<span><span class="co">#&gt; [1] "https://api.nhtsa.gov/recalls/campaignNumber?campaignNumber=24V064000"</span></span>
+<span><span class="co">#&gt; [2] "NULL"                                                                 </span></span>
+<span><span class="co">#&gt; [3] "list()"                                                               </span></span>
+<span><span class="co">#&gt; [4] "NULL"                                                                 </span></span>
+<span><span class="co">#&gt; [5] "list()"                                                               </span></span>
+<span><span class="co">#&gt; [6] "list()"                                                               </span></span>
+<span><span class="co">#&gt; [7] "list(error_is_error = function (resp) \nFALSE)"                       </span></span>
+<span><span class="co">#&gt; [8] "&lt;environment&gt;"</span></span>
 <span><span class="fu"><a href="https://rdrr.io/r/utils/head.html" class="external-link">head</a></span><span class="op">(</span><span class="va">recalls</span><span class="op">)</span></span>
 <span><span class="co">#&gt; <span style="color: #949494;"># A tibble: 6 × 15</span></span></span>
 <span><span class="co">#&gt;   manufacturer           nhtsaCampaignNumber parkIt parkOutSide overTheAirUpdate</span></span>
