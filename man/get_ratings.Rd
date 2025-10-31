@@ -7,7 +7,7 @@
 get_ratings(vehicle_id)
 }
 \arguments{
-\item{vehicle_id}{VehicleId from list_variants()}
+\item{vehicle_id}{NHTSA Vehicle ID}
 }
 \value{
 A tibble of ratings

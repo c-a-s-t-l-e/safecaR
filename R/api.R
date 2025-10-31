@@ -28,19 +28,21 @@ make_request <- function(path, query = list()) {
       httr2::req_url_query(!!!query) |>
       httr2::req_error(is_error = function(resp) FALSE)
 
+    full_url <- paste0(req)
+    print(full_url)
+
     resp <- httr2::req_perform(req)
 
     status <- httr2::resp_status(resp)
     if (status >= 400) {
-      stop("API request failed with status ", status)
+      message("API request failed with status ", status, " for path: ", path)
       return(tibble::tibble())
     }
 
     raw <- httr2::resp_body_string(resp)
-    parse_response(raw)
-  }, error = function(e) {
-    warning("API request error: ", conditionMessage(e))
-    tibble::tibble()
+    parse_response(raw)}, error = function(e) {
+      message("API request error: ", conditionMessage(e))
+      tibble::tibble()
   })
 }
 

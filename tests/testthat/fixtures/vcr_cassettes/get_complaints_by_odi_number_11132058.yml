@@ -1,0 +1,43 @@
+http_interactions:
+- request:
+    method: GET
+    uri: https://api.nhtsa.gov/complaints/odinumber?odinumber=11132058
+  response:
+    status: 200
+    headers:
+      content-encoding: gzip
+      content-length: '787'
+      content-type: application/json;charset=UTF-8
+      date: Fri, 31 Oct 2025 02:31:33 GMT
+      set-cookie:
+      - AWSALB=k0zEhB/wEhLFqbgNIBLbc7hJpfSRmfWQbXYLUh4aom+PSdTMf/yq/bSfccurhyDyj7XaQjX1gxJeH6LDsZPMGDxHnYVIHZpBKVupb/u1meoiJIUs5iwgKYw2BtsS;
+        Expires=Fri, 07 Nov 2025 02:31:33 GMT; Path=/
+      - AWSALBCORS=k0zEhB/wEhLFqbgNIBLbc7hJpfSRmfWQbXYLUh4aom+PSdTMf/yq/bSfccurhyDyj7XaQjX1gxJeH6LDsZPMGDxHnYVIHZpBKVupb/u1meoiJIUs5iwgKYw2BtsS;
+        Expires=Fri, 07 Nov 2025 02:31:33 GMT; Path=/; SameSite=None
+      strict-transport-security: max-age=31536000 ; includeSubDomains ; preload
+      vary: Accept-Encoding
+      x-amz-apigw-id: TSnc8GJaoAMFZOA=
+      x-amzn-remapped-connection: keep-alive
+      x-amzn-remapped-date: Fri, 31 Oct 2025 02:31:33 GMT
+      x-amzn-requestid: a64cb777-ec35-418a-8e92-e47087ecfe37
+      x-application-context: application:production
+      x-content-type-options: nosniff
+      x-frame-options: SAMEORIGIN
+    body:
+      string: '{"count":1,"message":"Results returned successfully","results":[{"odiNumber":11132058,"manufacturer":"Honda
+        (American Honda Motor Co.)","crash":false,"fire":false,"numberOfInjuries":0,"numberOfDeaths":0,"dateOfIncident":"08/01/2014","dateComplaintFiled":"09/28/2018","vin":"5J8TB2H27CA","components":"EXTERIOR
+        LIGHTING","summary":"AMBOS FOCOS DELANTEROS SE OBEDECEN, LAS FECHAS EXACTAS
+        CUANDO LO LLEV AL DEALER PARA GARANTA DE LOS FOCOS NO LA RECUERDO, PERO FUI
+        EN VARIAS OCASIONES.  ME INFORMARON QUE LA ESPECIFICACIN DEL FABRICANTE ERAN
+        FOCOS AL AIRE, Y QUE POR ESO SE HUMEDECIAN Y NO TENAN GARANTA, QUE TODOS LOS
+        DE ESE AO VINIERON AS.  ME CONFIRM Y NO REGRES PARA ESE PROBLEMA., AUNQUE
+        NO TIENE LGICA,  SE COMPRA UN AUTO PARA QUE FUNCIONE TODO NORMAL Y ESTE NO
+        ES EL CASO DE AMBOS FOCOS.  AL PASAR EL TIEMPO EL PROBLEMA SE HA AGRAVADO
+        PORQUE SE HUMEDECEN MAS Y AFECTA LA VISIBILIDAD.   LLAM NUEVAMENTE AL DEALER
+        PERO ME INFORMARON LO MISMO, LES INFORM QUE FUI EN EL PERIODO DE DE GARANTA
+        Y NO LOS REEMPLAZARON Y AHORA ES PEOR Y QUE NI ES CIERTO QUE TODOS LOS DE
+        MI AO ESTN AS PORQUE LOS QUE HE VISTO QUE ESTN BIEN.  AGRADECER PUEDAN V VERIFICAR
+        MI SOLICITUD EN EL DEALER Y RESOLVER EL INCONVENIENTE.  GRACIAS","products":[{"type":"Vehicle","productYear":"2012","productMake":"ACURA","productModel":"RDX","manufacturer":"Honda
+        (American Honda Motor Co.)"}]}]}'
+  recorded_at: 2025-10-31 02:31:33
+recorded_with: VCR-vcr/2.0.0

@@ -1,0 +1,24 @@
+http_interactions:
+- request:
+    method: GET
+    uri: https://api.nhtsa.gov/products/vehicle/modelYears?issueType=c
+  response:
+    status: 200
+    headers:
+      content-type: application/json;charset=UTF-8
+      x-amzn-requestid: e6d2b065-c058-4a4f-9699-58032a2899bb
+      x-amzn-remapped-connection: keep-alive
+      x-amz-apigw-id: TSaGJEJAoAMF-qw=
+      x-amzn-remapped-date: Fri, 31 Oct 2025 01:00:23 GMT
+      x-application-context: application:production
+      vary: Accept-Encoding
+      content-encoding: gzip
+      content-length: '274'
+      date: Fri, 31 Oct 2025 02:37:36 GMT
+      x-content-type-options: nosniff
+      x-frame-options: SAMEORIGIN
+      strict-transport-security: max-age=31536000 ; includeSubDomains ; preload
+    body:
+      string: '{"count":73,"message":"Results returned successfully","results":[{"modelYear":"1949"},{"modelYear":"1955"},{"modelYear":"1957"},{"modelYear":"1958"},{"modelYear":"1959"},{"modelYear":"1960"},{"modelYear":"1961"},{"modelYear":"1962"},{"modelYear":"1963"},{"modelYear":"1964"},{"modelYear":"1965"},{"modelYear":"1966"},{"modelYear":"1967"},{"modelYear":"1968"},{"modelYear":"1969"},{"modelYear":"1970"},{"modelYear":"1971"},{"modelYear":"1972"},{"modelYear":"1973"},{"modelYear":"1974"},{"modelYear":"1975"},{"modelYear":"1976"},{"modelYear":"1977"},{"modelYear":"1978"},{"modelYear":"1979"},{"modelYear":"1980"},{"modelYear":"1981"},{"modelYear":"1982"},{"modelYear":"1983"},{"modelYear":"1984"},{"modelYear":"1985"},{"modelYear":"1986"},{"modelYear":"1987"},{"modelYear":"1988"},{"modelYear":"1989"},{"modelYear":"1990"},{"modelYear":"1991"},{"modelYear":"1992"},{"modelYear":"1993"},{"modelYear":"1994"},{"modelYear":"1995"},{"modelYear":"1996"},{"modelYear":"1997"},{"modelYear":"1998"},{"modelYear":"1999"},{"modelYear":"2000"},{"modelYear":"2001"},{"modelYear":"2002"},{"modelYear":"2003"},{"modelYear":"2004"},{"modelYear":"2005"},{"modelYear":"2006"},{"modelYear":"2007"},{"modelYear":"2008"},{"modelYear":"2009"},{"modelYear":"2010"},{"modelYear":"2011"},{"modelYear":"2012"},{"modelYear":"2013"},{"modelYear":"2014"},{"modelYear":"2015"},{"modelYear":"2016"},{"modelYear":"2017"},{"modelYear":"2018"},{"modelYear":"2019"},{"modelYear":"2020"},{"modelYear":"2021"},{"modelYear":"2022"},{"modelYear":"2023"},{"modelYear":"2024"},{"modelYear":"2025"},{"modelYear":"2026"},{"modelYear":"9999"}]}'
+  recorded_at: 2025-10-31 02:37:36
+recorded_with: VCR-vcr/2.0.0

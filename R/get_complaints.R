@@ -12,15 +12,11 @@ get_complaints <- function(year, make, model) {
     stop("Arguments 'year', 'make', and 'model' must not be NULL")
   }
 
-  make_encoded <- URLencode(make, reserved = TRUE)
-  model_encoded <- URLencode(model, reserved = TRUE)
-  year_as_character <- as.character(year)
-
   path <- "complaints/complaintsByVehicle"
   query <- list(
-    make = make_encoded,
-    model = model_encoded,
-    modelYear = year_as_character
+    modelYear = year,
+    make = make,
+    model = model
   )
 
   data <- make_request(path = path, query = query)

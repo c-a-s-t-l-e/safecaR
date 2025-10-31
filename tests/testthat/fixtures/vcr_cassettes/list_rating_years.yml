@@ -1,0 +1,24 @@
+http_interactions:
+- request:
+    method: GET
+    uri: https://api.nhtsa.gov/SafetyRatings/
+  response:
+    status: 200
+    headers:
+      content-type: application/json;charset=utf-8
+      x-amzn-requestid: 7ce73d91-475f-4573-9aa1-8aa7c7af2905
+      x-amzn-remapped-connection: keep-alive
+      x-amz-apigw-id: TRkOhFxzIAMFijQ=
+      x-amzn-remapped-date: Thu, 30 Oct 2025 18:52:38 GMT
+      x-application-context: application:production
+      vary: Accept-Encoding
+      content-encoding: gzip
+      content-length: '215'
+      date: Fri, 31 Oct 2025 02:39:46 GMT
+      x-content-type-options: nosniff
+      x-frame-options: SAMEORIGIN
+      strict-transport-security: max-age=31536000 ; includeSubDomains ; preload
+    body:
+      string: '{"Count":37,"Message":"Results returned successfully","Results":[{"ModelYear":2026,"VehicleId":0},{"ModelYear":2025,"VehicleId":0},{"ModelYear":2024,"VehicleId":0},{"ModelYear":2023,"VehicleId":0},{"ModelYear":2022,"VehicleId":0},{"ModelYear":2021,"VehicleId":0},{"ModelYear":2020,"VehicleId":0},{"ModelYear":2019,"VehicleId":0},{"ModelYear":2018,"VehicleId":0},{"ModelYear":2017,"VehicleId":0},{"ModelYear":2016,"VehicleId":0},{"ModelYear":2015,"VehicleId":0},{"ModelYear":2014,"VehicleId":0},{"ModelYear":2013,"VehicleId":0},{"ModelYear":2012,"VehicleId":0},{"ModelYear":2011,"VehicleId":0},{"ModelYear":2010,"VehicleId":0},{"ModelYear":2009,"VehicleId":0},{"ModelYear":2008,"VehicleId":0},{"ModelYear":2007,"VehicleId":0},{"ModelYear":2006,"VehicleId":0},{"ModelYear":2005,"VehicleId":0},{"ModelYear":2004,"VehicleId":0},{"ModelYear":2003,"VehicleId":0},{"ModelYear":2002,"VehicleId":0},{"ModelYear":2001,"VehicleId":0},{"ModelYear":2000,"VehicleId":0},{"ModelYear":1999,"VehicleId":0},{"ModelYear":1998,"VehicleId":0},{"ModelYear":1997,"VehicleId":0},{"ModelYear":1996,"VehicleId":0},{"ModelYear":1995,"VehicleId":0},{"ModelYear":1994,"VehicleId":0},{"ModelYear":1993,"VehicleId":0},{"ModelYear":1992,"VehicleId":0},{"ModelYear":1991,"VehicleId":0},{"ModelYear":1990,"VehicleId":0}]}'
+  recorded_at: 2025-10-31 02:39:45
+recorded_with: VCR-vcr/2.0.0

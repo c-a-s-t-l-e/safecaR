@@ -1,0 +1,32 @@
+http_interactions:
+- request:
+    method: GET
+    uri: https://api.nhtsa.gov/SafetyRatings/VehicleId/7520
+  response:
+    status: 200
+    headers:
+      content-type: application/json;charset=utf-8
+      x-amzn-requestid: cf0c66ab-bcb0-44a9-a1e7-a3db83d3f696
+      x-amzn-remapped-connection: keep-alive
+      x-amz-apigw-id: TSndAG-jIAMFu2g=
+      x-amzn-remapped-date: Fri, 31 Oct 2025 02:31:34 GMT
+      x-application-context: application:production
+      vary: Accept-Encoding
+      content-encoding: gzip
+      content-length: '447'
+      date: Fri, 31 Oct 2025 02:33:13 GMT
+      x-content-type-options: nosniff
+      x-frame-options: SAMEORIGIN
+      strict-transport-security: max-age=31536000 ; includeSubDomains ; preload
+    body:
+      string: '{"Count":1,"Message":"Results returned successfully","Results":[{"VehiclePicture":"https://static.nhtsa.gov/images/vehicles/8151_st0640_046.png","OverallRating":"Not
+        Rated","OverallFrontCrashRating":"Not Rated","FrontCrashDriversideRating":"Not
+        Rated","FrontCrashPassengersideRating":"Not Rated","OverallSideCrashRating":"Not
+        Rated","SideCrashDriversideRating":"Not Rated","SideCrashPassengersideRating":"Not
+        Rated","combinedSideBarrierAndPoleRating-Front":"Not Rated","combinedSideBarrierAndPoleRating-Rear":"Not
+        Rated","sideBarrierRating-Overall":"Not Rated","RolloverRating":"Not Rated","RolloverRating2":"Not
+        Rated","RolloverPossibility":0.0,"RolloverPossibility2":0.0,"dynamicTipResult":"
+        ","SidePoleCrashRating":"Not Rated","NHTSAElectronicStabilityControl":"Standard","NHTSAForwardCollisionWarning":"No","NHTSALaneDepartureWarning":"No","ComplaintsCount":153,"RecallsCount":3,"InvestigationCount":1,"ModelYear":2013,"Make":"ACURA","Model":"RDX","VehicleDescription":"2013
+        Acura RDX SUV FWD","VehicleId":7520}]}'
+  recorded_at: 2025-10-31 02:33:12
+recorded_with: VCR-vcr/2.0.0

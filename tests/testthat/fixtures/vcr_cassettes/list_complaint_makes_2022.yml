@@ -1,0 +1,54 @@
+http_interactions:
+- request:
+    method: GET
+    uri: https://api.nhtsa.gov/products/vehicle/makes?modelYear=2022&issueType=c
+  response:
+    status: 200
+    headers:
+      content-type: application/json;charset=UTF-8
+      x-amzn-requestid: c6679d3b-dd8d-46b7-a18e-383c40525433
+      x-amzn-remapped-connection: keep-alive
+      x-amz-apigw-id: TSndUFY0IAMFb_w=
+      x-amzn-remapped-date: Fri, 31 Oct 2025 02:31:36 GMT
+      x-application-context: application:production
+      vary: Accept-Encoding
+      content-encoding: gzip
+      content-length: '1020'
+      date: Fri, 31 Oct 2025 02:37:37 GMT
+      x-content-type-options: nosniff
+      x-frame-options: SAMEORIGIN
+      strict-transport-security: max-age=31536000 ; includeSubDomains ; preload
+    body:
+      string: '{"count":135,"message":"Results returned successfully","results":[{"modelYear":"2022","make":"ACURA"},{"modelYear":"2022","make":"AIRSTREAM"},{"modelYear":"2022","make":"ALFA
+        ROMEO"},{"modelYear":"2022","make":"ALLIANCE RV"},{"modelYear":"2022","make":"AMERICAN
+        HAULER"},{"modelYear":"2022","make":"APRILIA"},{"modelYear":"2022","make":"ATRO"},{"modelYear":"2022","make":"AUDI"},{"modelYear":"2022","make":"BAODIAO"},{"modelYear":"2022","make":"BLACK
+        SERIES CAMPERS"},{"modelYear":"2022","make":"BLUE BIRD"},{"modelYear":"2022","make":"BMW"},{"modelYear":"2022","make":"BUCKEYE"},{"modelYear":"2022","make":"BUICK"},{"modelYear":"2022","make":"CADILLAC"},{"modelYear":"2022","make":"CAN-AM"},{"modelYear":"2022","make":"CFMOTO"},{"modelYear":"2022","make":"CHEVROLET"},{"modelYear":"2022","make":"CHRYSLER"},{"modelYear":"2022","make":"CLIPPER
+        TOWABLE"},{"modelYear":"2022","make":"COACH HOUSE"},{"modelYear":"2022","make":"COACHMEN"},{"modelYear":"2022","make":"CROSSROADS"},{"modelYear":"2022","make":"CRUISER"},{"modelYear":"2022","make":"D
+        AND A CUSTOM"},{"modelYear":"2022","make":"DODGE"},{"modelYear":"2022","make":"DONGFANG"},{"modelYear":"2022","make":"DORSEY"},{"modelYear":"2022","make":"DRV"},{"modelYear":"2022","make":"DUCATI"},{"modelYear":"2022","make":"DUTCHMEN"},{"modelYear":"2022","make":"DYNAMAX"},{"modelYear":"2022","make":"EAST
+        TO WEST"},{"modelYear":"2022","make":"ENTEGRA"},{"modelYear":"2022","make":"ESCAPE"},{"modelYear":"2022","make":"FCCC"},{"modelYear":"2022","make":"FIAT"},{"modelYear":"2022","make":"FIELD
+        VAN"},{"modelYear":"2022","make":"FLEETWOOD"},{"modelYear":"2022","make":"FORD"},{"modelYear":"2022","make":"FOREST
+        RIVER"},{"modelYear":"2022","make":"FOUR WHEEL"},{"modelYear":"2022","make":"FREIGHTLINER"},{"modelYear":"2022","make":"GENESIS"},{"modelYear":"2022","make":"GENUINE
+        SCOOTER"},{"modelYear":"2022","make":"GMC"},{"modelYear":"2022","make":"GRAND
+        DESIGN"},{"modelYear":"2022","make":"GULF STREAM"},{"modelYear":"2022","make":"HARLEY-DAVIDSON"},{"modelYear":"2022","make":"HEARTLAND"},{"modelYear":"2022","make":"HIGHLAND
+        RIDGE"},{"modelYear":"2022","make":"HIGHLAND RIDGE TT"},{"modelYear":"2022","make":"HONDA"},{"modelYear":"2022","make":"HUSQVARNA"},{"modelYear":"2022","make":"HYUNDAI"},{"modelYear":"2022","make":"IC
+        BUS"},{"modelYear":"2022","make":"ICON EV"},{"modelYear":"2022","make":"INDIAN"},{"modelYear":"2022","make":"INFINITI"},{"modelYear":"2022","make":"INNOVATIVE
+        SPECIALTIES"},{"modelYear":"2022","make":"INTERNATIONAL"},{"modelYear":"2022","make":"ISUZU"},{"modelYear":"2022","make":"JAGUAR"},{"modelYear":"2022","make":"JAYCO"},{"modelYear":"2022","make":"JEEP"},{"modelYear":"2022","make":"KARAVAN"},{"modelYear":"2022","make":"KAWASAKI"},{"modelYear":"2022","make":"KENWORTH"},{"modelYear":"2022","make":"KEYSTONE"},{"modelYear":"2022","make":"KIA"},{"modelYear":"2022","make":"KL
+        MANUFACTURING"},{"modelYear":"2022","make":"KTM"},{"modelYear":"2022","make":"KYMCO"},{"modelYear":"2022","make":"KZRV"},{"modelYear":"2022","make":"LAMBORGHINI"},{"modelYear":"2022","make":"LAND
+        ROVER"},{"modelYear":"2022","make":"LEXUS"},{"modelYear":"2022","make":"LINCOLN"},{"modelYear":"2022","make":"LOAD
+        TRAIL"},{"modelYear":"2022","make":"LUCID"},{"modelYear":"2022","make":"MACK"},{"modelYear":"2022","make":"MASERATI"},{"modelYear":"2022","make":"MASTER
+        TOW"},{"modelYear":"2022","make":"MAZDA"},{"modelYear":"2022","make":"MERCEDES-BENZ"},{"modelYear":"2022","make":"MIDWEST
+        AUTOMOTIVE DESIGN"},{"modelYear":"2022","make":"MINI"},{"modelYear":"2022","make":"MITSUBISHI"},{"modelYear":"2022","make":"NEW
+        FLYER"},{"modelYear":"2022","make":"NEWMAR"},{"modelYear":"2022","make":"NISSAN"},{"modelYear":"2022","make":"OLIVER
+        TRAVEL TRAILERS"},{"modelYear":"2022","make":"ORANGE LINE"},{"modelYear":"2022","make":"OSPREY
+        CUSTOM"},{"modelYear":"2022","make":"OUTBACK CUSTOM"},{"modelYear":"2022","make":"PALOMINO"},{"modelYear":"2022","make":"PETERBILT"},{"modelYear":"2022","make":"PIAGGIO"},{"modelYear":"2022","make":"POLARIS"},{"modelYear":"2022","make":"POLESTAR"},{"modelYear":"2022","make":"PORSCHE"},{"modelYear":"2022","make":"PRIME
+        TIME"},{"modelYear":"2022","make":"QUALITY"},{"modelYear":"2022","make":"QUALITY
+        TRAILER"},{"modelYear":"2022","make":"RAM"},{"modelYear":"2022","make":"RENEGADE"},{"modelYear":"2022","make":"RENEGADE
+        RV"},{"modelYear":"2022","make":"RIVIAN"},{"modelYear":"2022","make":"ROYAL
+        ENFIELD"},{"modelYear":"2022","make":"SPARTAN"},{"modelYear":"2022","make":"SPORT
+        HAVEN"},{"modelYear":"2022","make":"STARCRAFT"},{"modelYear":"2022","make":"STEALTH"},{"modelYear":"2022","make":"SUBARU"},{"modelYear":"2022","make":"SUZUKI"},{"modelYear":"2022","make":"T.A.
+        PELSUE COMPANY"},{"modelYear":"2022","make":"TAKE 3 TRAILERS"},{"modelYear":"2022","make":"TAXA"},{"modelYear":"2022","make":"TESLA"},{"modelYear":"2022","make":"THOMAS
+        BUILT BUSES"},{"modelYear":"2022","make":"THOR MOTOR COACH"},{"modelYear":"2022","make":"TIFFIN"},{"modelYear":"2022","make":"TOYOTA"},{"modelYear":"2022","make":"TRAILSTAR"},{"modelYear":"2022","make":"TRIUMPH"},{"modelYear":"2022","make":"VANDERHALL"},{"modelYear":"2022","make":"VANLEIGH"},{"modelYear":"2022","make":"VOLKSWAGEN"},{"modelYear":"2022","make":"VOLVO"},{"modelYear":"2022","make":"WESTERN
+        STAR"},{"modelYear":"2022","make":"WHITE RIVER MARINE GROUP"},{"modelYear":"2022","make":"WINNEBAGO"},{"modelYear":"2022","make":"XTREME
+        OUTDOORS"},{"modelYear":"2022","make":"YAMAHA"},{"modelYear":"2022","make":"YONGFU"}]}'
+  recorded_at: 2025-10-31 02:37:36
+recorded_with: VCR-vcr/2.0.0

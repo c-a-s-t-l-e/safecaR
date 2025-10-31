@@ -1,0 +1,28 @@
+http_interactions:
+- request:
+    method: GET
+    uri: https://api.nhtsa.gov/products/vehicle/models?modelYear=2022&make=INVALIDMAKE&issueType=c
+  response:
+    status: 500
+    headers:
+      content-language: en-US
+      content-length: '47'
+      content-type: application/json;charset=UTF-8
+      date: Fri, 31 Oct 2025 02:37:37 GMT
+      set-cookie:
+      - AWSALB=TEFYY7IZskT1aaaEXnRmkPi6TSl/qjWmdxH5Deuxd8eCIpjLPnf6rLobvuQ20bAUAdeRWAyjxSuAC9rfCSRuE7BTsCObeBZ8k9v4rzX+33VWDSEJs09TWQCX4P6V;
+        Expires=Fri, 07 Nov 2025 02:37:37 GMT; Path=/
+      - AWSALBCORS=TEFYY7IZskT1aaaEXnRmkPi6TSl/qjWmdxH5Deuxd8eCIpjLPnf6rLobvuQ20bAUAdeRWAyjxSuAC9rfCSRuE7BTsCObeBZ8k9v4rzX+33VWDSEJs09TWQCX4P6V;
+        Expires=Fri, 07 Nov 2025 02:37:37 GMT; Path=/; SameSite=None
+      strict-transport-security: max-age=31536000 ; includeSubDomains ; preload
+      x-amz-apigw-id: TSoV0HxboAMFaQw=
+      x-amzn-remapped-connection: keep-alive
+      x-amzn-remapped-date: Fri, 31 Oct 2025 02:37:37 GMT
+      x-amzn-requestid: 7a706110-d16d-40ea-8e98-bdb9b6cd7977
+      x-application-context: application:production
+      x-content-type-options: nosniff
+      x-frame-options: SAMEORIGIN
+    body:
+      string: '{"message":"Internal server error","error":500}'
+  recorded_at: 2025-10-31 02:37:37
+recorded_with: VCR-vcr/2.0.0

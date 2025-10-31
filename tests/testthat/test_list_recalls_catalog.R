@@ -1,19 +1,40 @@
 test_that("list_recall_years() returns a non-empty tibble", {
-  years <- list_recall_years()
+  skip_on_cran()
+  skip_if_offline()
+
+  vcr::use_cassette("list_recall_years", {
+    years <- list_recall_years()
+  })
+
   expect_s3_class(years, "tbl_df")       # tibble class
-  expect_true(nrow(years) > 0)          # not empty
+  expect_true(nrow(years) > 0)           # not empty
   expect_true("modelYear" %in% names(years))
 })
 
+
 test_that("list_recall_makes() returns expected columns", {
-  makes <- list_recall_makes(2022)
+  skip_on_cran()
+  skip_if_offline()
+
+  vcr::use_cassette("list_recall_makes_2022", {
+    makes <- list_recall_makes(2022)
+  })
+
   expect_s3_class(makes, "tbl_df")
   expect_true(all(c("modelYear", "make") %in% names(makes)))
   expect_true(nrow(makes) > 0)
 })
 
+
 test_that("list_recall_models() handles invalid make gracefully", {
-  models <- list_recall_models(2022, "INVALIDMAKE")
+  skip_on_cran()
+  skip_if_offline()
+
+  vcr::use_cassette("list_recall_models_invalidmake_2022", {
+    models <- list_recall_models(2022, "INVALIDMAKE")
+  })
+
   expect_s3_class(models, "tbl_df")
   expect_equal(nrow(models), 0)
 })
+

@@ -1,0 +1,76 @@
+http_interactions:
+- request:
+    method: GET
+    uri: https://api.nhtsa.gov/SafetyRatings/modelyear/2022/make/ACURA/model/RDX
+  response:
+    status: 200
+    headers:
+      content-type: application/json;charset=utf-8
+      x-amzn-requestid: ce3778a1-acc6-4672-b559-5bd70ff571f0
+      x-amzn-remapped-connection: keep-alive
+      x-amz-apigw-id: TSndFG7loAMFoLw=
+      x-amzn-remapped-date: Fri, 31 Oct 2025 02:31:34 GMT
+      x-application-context: application:production
+      vary: Accept-Encoding
+      content-encoding: gzip
+      content-length: '145'
+      date: Fri, 31 Oct 2025 02:33:13 GMT
+      x-content-type-options: nosniff
+      x-frame-options: SAMEORIGIN
+      strict-transport-security: max-age=31536000 ; includeSubDomains ; preload
+    body:
+      string: '{"Count":2,"Message":"Results returned successfully","Results":[{"VehicleDescription":"2022
+        Acura RDX SUV AWD","VehicleId":16838},{"VehicleDescription":"2022 Acura RDX
+        SUV FWD","VehicleId":16837}]}'
+  recorded_at: 2025-10-31 02:33:12
+- request:
+    method: GET
+    uri: https://api.nhtsa.gov/SafetyRatings/VehicleId/16838
+  response:
+    status: 200
+    headers:
+      content-type: application/json;charset=utf-8
+      x-amzn-requestid: 187395a7-f5dc-4e25-bbef-6ae4a204fe83
+      x-amzn-remapped-connection: keep-alive
+      x-amz-apigw-id: TSndJERmIAMFuzw=
+      x-amzn-remapped-date: Fri, 31 Oct 2025 02:31:34 GMT
+      x-application-context: application:production
+      vary: Accept-Encoding
+      content-encoding: gzip
+      content-length: '524'
+      date: Fri, 31 Oct 2025 02:33:13 GMT
+      x-content-type-options: nosniff
+      x-frame-options: SAMEORIGIN
+      strict-transport-security: max-age=31536000 ; includeSubDomains ; preload
+    body:
+      string: '{"Count":1,"Message":"Results returned successfully","Results":[{"OverallRating":"5","OverallFrontCrashRating":"4","FrontCrashDriversideRating":"4","FrontCrashPassengersideRating":"4","FrontCrashPicture":"https://static.nhtsa.gov/crashTest/images/2022/v10556P080.jpg","FrontCrashVideo":"https://static.nhtsa.gov/crashTest/videos/2022/v10556C017.wmv","OverallSideCrashRating":"5","SideCrashDriversideRating":"5","SideCrashPassengersideRating":"5","SideCrashPicture":"https://static.nhtsa.gov/crashTest/images/2022/v10364P104.jpg","SideCrashVideo":"https://static.nhtsa.gov/crashTest/videos/2022/v10364C013.wmv","combinedSideBarrierAndPoleRating-Front":"5","combinedSideBarrierAndPoleRating-Rear":"5","sideBarrierRating-Overall":"5","RolloverRating":"4","RolloverRating2":"Not
+        Rated","RolloverPossibility":0.15,"RolloverPossibility2":0.0,"dynamicTipResult":"No
+        Tip","SidePoleCrashRating":"5","SidePolePicture":"https://static.nhtsa.gov/crashTest/images/2022/v10365P072.jpg","SidePoleVideo":"https://static.nhtsa.gov/crashTest/videos/2022/v10365C013.wmv","NHTSAElectronicStabilityControl":"Standard","NHTSAForwardCollisionWarning":"Standard","NHTSALaneDepartureWarning":"Standard","ComplaintsCount":27,"RecallsCount":1,"InvestigationCount":0,"ModelYear":2022,"Make":"ACURA","Model":"RDX","VehicleDescription":"2022
+        Acura RDX SUV AWD","VehicleId":16838}]}'
+  recorded_at: 2025-10-31 02:33:12
+- request:
+    method: GET
+    uri: https://api.nhtsa.gov/SafetyRatings/VehicleId/16837
+  response:
+    status: 200
+    headers:
+      content-type: application/json;charset=utf-8
+      x-amzn-requestid: c0fab2b8-09fc-4576-926e-71921e3687f4
+      x-amzn-remapped-connection: keep-alive
+      x-amz-apigw-id: TSndMGQKoAMFZOA=
+      x-amzn-remapped-date: Fri, 31 Oct 2025 02:31:35 GMT
+      x-application-context: application:production
+      vary: Accept-Encoding
+      content-encoding: gzip
+      content-length: '525'
+      date: Fri, 31 Oct 2025 02:33:13 GMT
+      x-content-type-options: nosniff
+      x-frame-options: SAMEORIGIN
+      strict-transport-security: max-age=31536000 ; includeSubDomains ; preload
+    body:
+      string: '{"Count":1,"Message":"Results returned successfully","Results":[{"OverallRating":"5","OverallFrontCrashRating":"4","FrontCrashDriversideRating":"4","FrontCrashPassengersideRating":"4","FrontCrashPicture":"https://static.nhtsa.gov/crashTest/images/2022/v10556P080.jpg","FrontCrashVideo":"https://static.nhtsa.gov/crashTest/videos/2022/v10556C017.wmv","OverallSideCrashRating":"5","SideCrashDriversideRating":"5","SideCrashPassengersideRating":"5","SideCrashPicture":"https://static.nhtsa.gov/crashTest/images/2022/v10364P104.jpg","SideCrashVideo":"https://static.nhtsa.gov/crashTest/videos/2022/v10364C013.wmv","combinedSideBarrierAndPoleRating-Front":"5","combinedSideBarrierAndPoleRating-Rear":"5","sideBarrierRating-Overall":"5","RolloverRating":"4","RolloverRating2":"Not
+        Rated","RolloverPossibility":0.165,"RolloverPossibility2":0.0,"dynamicTipResult":"No
+        Tip","SidePoleCrashRating":"5","SidePolePicture":"https://static.nhtsa.gov/crashTest/images/2022/v10365P072.jpg","SidePoleVideo":"https://static.nhtsa.gov/crashTest/videos/2022/v10365C013.wmv","NHTSAElectronicStabilityControl":"Standard","NHTSAForwardCollisionWarning":"Standard","NHTSALaneDepartureWarning":"Standard","ComplaintsCount":27,"RecallsCount":1,"InvestigationCount":0,"ModelYear":2022,"Make":"ACURA","Model":"RDX","VehicleDescription":"2022
+        Acura RDX SUV FWD","VehicleId":16837}]}'
+  recorded_at: 2025-10-31 02:33:13
+recorded_with: VCR-vcr/2.0.0

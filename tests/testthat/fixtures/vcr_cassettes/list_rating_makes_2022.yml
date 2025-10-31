@@ -1,0 +1,25 @@
+http_interactions:
+- request:
+    method: GET
+    uri: https://api.nhtsa.gov/SafetyRatings/modelyear/2022
+  response:
+    status: 200
+    headers:
+      content-type: application/json;charset=utf-8
+      x-amzn-requestid: 84c9858f-fb49-45b7-81b1-545e1df3d1bf
+      x-amzn-remapped-connection: keep-alive
+      x-amz-apigw-id: TSndjHzEIAMF3GQ=
+      x-amzn-remapped-date: Fri, 31 Oct 2025 02:31:37 GMT
+      x-application-context: application:production
+      vary: Accept-Encoding
+      content-encoding: gzip
+      content-length: '351'
+      date: Fri, 31 Oct 2025 02:39:46 GMT
+      x-content-type-options: nosniff
+      x-frame-options: SAMEORIGIN
+      strict-transport-security: max-age=31536000 ; includeSubDomains ; preload
+    body:
+      string: '{"Count":38,"Message":"Results returned successfully","Results":[{"ModelYear":2022,"Make":"ACURA","VehicleId":0},{"ModelYear":2022,"Make":"ALFA","VehicleId":0},{"ModelYear":2022,"Make":"AUDI","VehicleId":0},{"ModelYear":2022,"Make":"BENTLEY","VehicleId":0},{"ModelYear":2022,"Make":"BMW","VehicleId":0},{"ModelYear":2022,"Make":"BUICK","VehicleId":0},{"ModelYear":2022,"Make":"CADILLAC","VehicleId":0},{"ModelYear":2022,"Make":"CHEVROLET","VehicleId":0},{"ModelYear":2022,"Make":"CHRYSLER","VehicleId":0},{"ModelYear":2022,"Make":"DODGE","VehicleId":0},{"ModelYear":2022,"Make":"FIAT","VehicleId":0},{"ModelYear":2022,"Make":"FORD","VehicleId":0},{"ModelYear":2022,"Make":"FREIGHTLINER","VehicleId":0},{"ModelYear":2022,"Make":"GENESIS","VehicleId":0},{"ModelYear":2022,"Make":"GMC","VehicleId":0},{"ModelYear":2022,"Make":"HONDA","VehicleId":0},{"ModelYear":2022,"Make":"HYUNDAI","VehicleId":0},{"ModelYear":2022,"Make":"INFINITI","VehicleId":0},{"ModelYear":2022,"Make":"JAGUAR","VehicleId":0},{"ModelYear":2022,"Make":"JEEP","VehicleId":0},{"ModelYear":2022,"Make":"KIA","VehicleId":0},{"ModelYear":2022,"Make":"LAND
+        ROVER","VehicleId":0},{"ModelYear":2022,"Make":"LEXUS","VehicleId":0},{"ModelYear":2022,"Make":"LINCOLN","VehicleId":0},{"ModelYear":2022,"Make":"MAZDA","VehicleId":0},{"ModelYear":2022,"Make":"MERCEDES-BENZ","VehicleId":0},{"ModelYear":2022,"Make":"MINI","VehicleId":0},{"ModelYear":2022,"Make":"MITSUBISHI","VehicleId":0},{"ModelYear":2022,"Make":"NISSAN","VehicleId":0},{"ModelYear":2022,"Make":"POLESTAR","VehicleId":0},{"ModelYear":2022,"Make":"PORSCHE","VehicleId":0},{"ModelYear":2022,"Make":"RAM","VehicleId":0},{"ModelYear":2022,"Make":"ROLLS-ROYCE","VehicleId":0},{"ModelYear":2022,"Make":"SUBARU","VehicleId":0},{"ModelYear":2022,"Make":"TESLA","VehicleId":0},{"ModelYear":2022,"Make":"TOYOTA","VehicleId":0},{"ModelYear":2022,"Make":"VOLKSWAGEN","VehicleId":0},{"ModelYear":2022,"Make":"VOLVO","VehicleId":0}]}'
+  recorded_at: 2025-10-31 02:39:45
+recorded_with: VCR-vcr/2.0.0
