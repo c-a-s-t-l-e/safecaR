@@ -32,7 +32,7 @@ get_complaints <- function(year, make, model) {
       tolower(model) == "model y" &&
       year != 2020 &&
       nrow(data) == 0) {
-    warning("Tesla Model Y complaints only return data for 2020. Other years return no records.")
+    warning("API ERROR: All Tesla Model Y complaints for all years are returned only if you enter for the year parameter 2020. Other years return no records.")
   }
 
 
