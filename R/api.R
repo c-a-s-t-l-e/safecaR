@@ -29,7 +29,7 @@ make_request <- function(path, query = list()) {
       httr2::req_error(is_error = function(resp) FALSE)
 
     full_url <- paste0(req)
-    print(full_url)
+    # print(full_url)
 
     resp <- httr2::req_perform(req)
 

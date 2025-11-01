@@ -1,6 +1,8 @@
 # R/get_complaints.R
 
 #' Get complaints by year/make/model
+#'
+#' Note: For Tesla Model Y, only 2020 returns complaints; other years return empty.
 #' @param year Numeric model year
 #' @param make Vehicle make
 #' @param model Vehicle model
@@ -25,6 +27,14 @@ get_complaints <- function(year, make, model) {
   if (nrow(data) > 0){
     data <- data |> tidyr::unnest(products, names_sep = "_")
   }
+
+  if (tolower(make) == "tesla" &&
+      tolower(model) == "model y" &&
+      year != 2020 &&
+      nrow(data) == 0) {
+    warning("Tesla Model Y complaints only return data for 2020. Other years return no records.")
+  }
+
 
   data
 }
