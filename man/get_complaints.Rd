@@ -17,5 +17,5 @@ get_complaints(year, make, model)
 A tibble of complaints
 }
 \description{
-Get complaints by year/make/model
+Note: For Tesla Model Y, only 2020 returns complaints; other years return empty.
 }

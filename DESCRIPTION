@@ -10,9 +10,10 @@ Authors@R: c(
       comment = c(ORCID = "0009-0003-5162-4657")
     )
   )
-Description: Provides functions for NHTSA APIs (https://www.nhtsa.gov/nhtsa-datasets-and-apis) to list vehicle years, makes, models, and variants, and to retrieve crash ratings, recalls, and complaints for specific vehicles or all model variants. Returns results as tidy tibbles for easy analysis. Requires an internet connection at runtime.
+Description: Provides functions for NHTSA APIs (<https://www.nhtsa.gov/nhtsa-datasets-and-apis>) to list vehicle years, makes, models, and variants, and to retrieve crash ratings, recalls, and complaints for specific vehicles or all model variants. Returns results as tidy tibbles for easy analysis. Requires an internet connection at runtime.
 License: MIT + file LICENSE
 Encoding: UTF-8
+Depends: R (>= 4.1.0)
 LazyData: true
 Imports: 
     dplyr,
@@ -22,11 +23,9 @@ Imports:
     tibble,
     tidyr
 Suggests: 
-    knitr,
     rmarkdown,
     testthat (>= 3.0.0),
     vcr
 Config/testthat/edition: 3
 RoxygenNote: 7.3.3
-VignetteBuilder: knitr
 Config/Needs/website: rmarkdown
